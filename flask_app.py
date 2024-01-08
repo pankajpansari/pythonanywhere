@@ -8,5 +8,5 @@ app = Flask(__name__)
 
 @app.route('/<name>')
 def hello(name):
-    return '<b>Hello from {escape(name)}!</b>'
+    return f'<b>Hello from {escape(name)}!</b>'
 
