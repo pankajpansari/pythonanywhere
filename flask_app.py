@@ -6,6 +6,6 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/<name>')
-def hello_world():
+def hello(name):
     return '<b>Hello from {escape(name)}!</b>'
 
